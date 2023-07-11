@@ -1,0 +1,32 @@
+header {
+    background-color: aquamarine;
+    .container {
+        max-width: 1180px;
+        width: 100%;
+        margin: 0 auto;
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            font-size: 60px;
+            color: hotpink;
+        }
+        nav {
+            max-width: 500px;
+            width: 100%;
+            ul {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                a {
+                    font-size: 24px;
+                    color: hotpink;
+                }
+            }
+        }
+        .fa-bars {
+            display: none;
+        }
+    }
+}
