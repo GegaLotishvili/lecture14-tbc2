@@ -1,0 +1,13 @@
+@mixin mycontainer {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@mixin goflex($flexdir, $justifycontent, $alignitems, $wrap) {
+    display: flex;
+    flex-direction: $flexdir;
+    justify-content: $justifycontent;
+    align-items: $alignitems;
+    flex-wrap: $wrap;
+}

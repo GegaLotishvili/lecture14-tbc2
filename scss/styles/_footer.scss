@@ -1,0 +1,14 @@
+footer {
+    background-color: aquamarine;
+
+    .container {
+        height: 700px;
+        @extend %mycont;
+        @include goflex(row, space-between, flex-start, wrap);
+        .info {
+            width: 250px;
+            height: 300px;
+            border: 2px solid black;
+        }
+    }
+}

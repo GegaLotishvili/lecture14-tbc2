@@ -1,32 +1,37 @@
 header {
     background-color: aquamarine;
     .container {
-        max-width: 1180px;
-        width: 100%;
-        margin: 0 auto;
-        border: 2px solid black;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @extend %mycont;
+        @extend %myflex;
+        @media (max-width: 1200px) {
+            width: 90%;
+        }
         .logo {
             font-size: 60px;
-            color: hotpink;
+            color: $chemiferi;
         }
         nav {
             max-width: 500px;
             width: 100%;
+            @media (max-width: 850px) {
+                display: none;
+            }
             ul {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
                 a {
                     font-size: 24px;
-                    color: hotpink;
+                    color: $chemiferi;
                 }
             }
         }
         .fa-bars {
             display: none;
+            color: $chemiferi;
+            @media (max-width: 850px) {
+                display: inline-block;
+            }
         }
     }
 }
